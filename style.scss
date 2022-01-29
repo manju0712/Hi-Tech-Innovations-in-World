@@ -1,0 +1,126 @@
+
+.mainhead{
+    background-color: lightskyblue;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.mainfont
+{
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   font-style: normal;
+   align-content: flex-start;
+  
+
+  &__title{
+      background-color: lightskyblue;
+      font-size: 30px;
+      text-align: center;
+      
+  }
+
+  &__img{
+    background-color: lightseagreen;
+    width: 500;
+    height: 400;
+   
+    }
+  &__detail{
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      position: relative;
+      text-align: center;
+
+  }
+  &__textblock{
+
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  }
+
+.list{
+    background-color: lightyellow;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+.gadgets{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    background-color: lightyellow;
+    justify-content: space-around;
+    width: 100%;
+
+&__list{
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+    font-size: 15px;
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+     }
+
+&__button{
+    background-color: lightsteelblue;
+    padding: 5px 5px;
+    text-align: center;
+    cursor: pointer;
+    width:30%;
+    margin-left:25%;
+    margin-right:25%;
+    display: inline-block;
+    font-weight: bold;
+    
+      }
+
+}
+
+.technews{
+
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    justify-content: space-between;
+    background-color: lightyellow;
+    width: 100%;
+    
+&__technewsflex{
+
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    text-align:start;
+    width: 70%;
+    border: 1px solid black;
+    align-content: flex-start;
+}
+}
+.techlinks
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color:lightyellow;
+    width: 30%;
+    align-content: flex-start;
+
+
+}
