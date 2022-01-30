@@ -14,10 +14,11 @@
 
 .content{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-   font-style: normal;
-   align-content: flex-start;
+    font-style: normal;
+     align-content: flex-start;   
+     
   
 
   &__title{
@@ -27,41 +28,80 @@
       
   }
 
+
+
+  &__animationheader{  
+
+    width: 20%;
+    height: 20%;
+    display: flex;
+    position: relative;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    /*transform-origin:center ;*/
+    transition: 15s ease-in-out;
+    animation-direction: normal;
+}
+@keyframes example {
+    0%   {background: wheat;
+         }
+    50%  {transform: translate(500px,0);
+         }
+    75% {transform: translate(500px,0);
+  }
+}
+
   &__img{
     background-color: lightseagreen;
-    width: 500;
-    height: 400;
-   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
     }
+
+
+
   &__detail{
       font-size: 20px;
       font-family: Arial, Helvetica, sans-serif;
       position: relative;
       text-align: center;
 
-  }
-  &__textblock{
+     }
 
-    position: absolute;
-    bottom: 10px;
-    right: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+    }
 
-  }
+      .animationheader{  
 
-.list{
+        width: 20%;
+        height: 20%;
+        display: flex;
+        position: relative;
+        animation-name: example;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        transform-origin: center;
+        transition: 15s ease-in;
+    }
+    @keyframes example {
+        0%   {background: wheat;
+             }
+        50%  {transform: translate(500px,0);
+             }
+        75% {transform: translate(500px,0);
+      }
+    }
+    
+    .list{
     background-color: lightyellow;
     font-family: Arial, Helvetica, sans-serif;
-
 }
-
 
 
 .gadgets{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-content: space-between;
     background-color: lightyellow;
@@ -79,6 +119,7 @@
 
 &__button{
     background-color: lightsteelblue;
+    transition: 0.5s linear;
     padding: 5px 5px;
     text-align: center;
     cursor: pointer;
@@ -87,7 +128,13 @@
     margin-right:25%;
     display: inline-block;
     font-weight: bold;
+
     
+      }
+
+      &__button:hover{
+    
+         background :chocolate;
       }
 
 }
@@ -95,7 +142,7 @@
 .technews{
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items:left;
     justify-content: space-between;
     background-color: lightyellow;
@@ -113,7 +160,7 @@
 }
 }
 .techlinks
-{
+    {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -121,6 +168,4 @@
     background-color:lightyellow;
     width: 30%;
     align-content: flex-start;
-
-
-}
+    }
