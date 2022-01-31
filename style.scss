@@ -1,9 +1,15 @@
 
 .mainhead{
     background-color: lightskyblue;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
-
+    height: 100px;
+  
+    &__logo{
+        position:fixed; 
+        top:0; 
+        left:0;
+    }
 }
 
 .mainfont
@@ -14,12 +20,12 @@
 
 .content{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
-    font-style: normal;
-     align-content: flex-start;   
-     
-  
+     align-content: flex-start; 
+     align-items: center;  
+     font-family: Arial, Helvetica, sans-serif;
+    
 
   &__title{
       background-color: lightskyblue;
